@@ -6,7 +6,6 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -26,6 +25,18 @@ public class MainActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        showMainWidget();
+    }
+
+    public void calculateAnswer() {
+        for (int i=0; i<cards.length; i++) {
+            if (cards[i].getAnswer()) {
+                answer += cards[i].getCard()[0];
+            }
+        }
+    }
+
+    public void showMainWidget() {
         setContentView(R.layout.activity_main);
         Button mYesButton = (Button) findViewById(R.id.YesButton);
         Button mNoButton = (Button) findViewById(R.id.NoButton);
@@ -47,46 +58,55 @@ public class MainActivity extends ActionBarActivity {
         });
     }
 
-    public void calculateAnswer() {
-        for (int i=0; i<cards.length; i++) {
-            if (cards[i].getAnswer()) {
-                answer = answer + cards[i].getCard()[0];
+    public void showAnswer() {
+        currentQuestionNumber = 0; // reset to the start
+        calculateAnswer();
+
+        setContentView(R.layout.answer_activity);
+        Button mPlayAgainButton = (Button) findViewById(R.id.PlayAgainButton);
+        mPlayAgainButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                currentQuestionNumber = 0;
+                answer = 0;
+                showMainWidget();
             }
-        }
+        });
+        ((TextView) findViewById(R.id.Answer)).setText(Integer.toString(answer));
     }
 
     public void displayCard() {
         if (currentQuestionNumber == 8) {
-            currentQuestionNumber = 0; // reset to the start
-            calculateAnswer();
-        }
+            showAnswer();
+        } else {
 
-        ((TextView) findViewById(R.id.step)).setText("Step " + (currentQuestionNumber + 1) + " of 8");
+            ((TextView) findViewById(R.id.step)).setText("Step " + (currentQuestionNumber + 1) + " of 8");
 
-        int[] resourceIds = {
-                R.id.textView0,
-                R.id.textView1,
-                R.id.textView2,
-                R.id.textView3,
-                R.id.textView4,
-                R.id.textView5,
-                R.id.textView6,
-                R.id.textView7,
-                R.id.textView8,
-                R.id.textView9,
-                R.id.textView10,
-                R.id.textView11,
-                R.id.textView12,
-                R.id.textView13,
-                R.id.textView14,
-                R.id.textView15,
-                R.id.textView16,
-                R.id.textView17,
-                R.id.textView18,
-                R.id.textView19
-        };
-        for (int i=0; i<resourceIds.length; i++) {
-            ((TextView) findViewById(resourceIds[i])).setText(Integer.toString(cards[currentQuestionNumber].getCard()[i]));
+            int[] resourceIds = {
+                    R.id.textView0,
+                    R.id.textView1,
+                    R.id.textView2,
+                    R.id.textView3,
+                    R.id.textView4,
+                    R.id.textView5,
+                    R.id.textView6,
+                    R.id.textView7,
+                    R.id.textView8,
+                    R.id.textView9,
+                    R.id.textView10,
+                    R.id.textView11,
+                    R.id.textView12,
+                    R.id.textView13,
+                    R.id.textView14,
+                    R.id.textView15,
+                    R.id.textView16,
+                    R.id.textView17,
+                    R.id.textView18,
+                    R.id.textView19
+            };
+            for (int i = 0; i < resourceIds.length; i++) {
+                ((TextView) findViewById(resourceIds[i])).setText(Integer.toString(cards[currentQuestionNumber].getCard()[i]));
+            }
         }
     }
 
