@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Fifty Play</string>
+    <string name="yes_button">Yes</string>
+    <string name="no_button">No</string>
+    <string name="instructions">
+        Pick a number between 1 &amp; 50.\nI will tell you your number.\n
+    </string>
+</resources>
