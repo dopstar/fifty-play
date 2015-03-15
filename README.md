@@ -7,9 +7,9 @@ are presented to you, if your secret number is among those numbers you click the
 Otherwise you click the No button. You continue the next seven steps. And your secret number is
 finally revealed to you.
 
-#Screenshot#
-![screenshot01](screenshots/screenshot01.png)
+#Screenshots#
+![screenshot01](https://bitbucket.org/mkhanyisi/fifty-play/raw/master/screenshots/screenshot01.png)
 
-![screenshot02](screenshots/screenshot02.png)
+![screenshot02](https://bitbucket.org/mkhanyisi/fifty-play/raw/master/screenshots/screenshot02.png)
 
-![screenshot03](screenshots/screenshot03.png)
+![screenshot03](https://bitbucket.org/mkhanyisi/fifty-play/raw/master/screenshots/screenshot03.png)
