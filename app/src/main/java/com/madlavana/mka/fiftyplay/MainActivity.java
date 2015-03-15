@@ -1,4 +1,4 @@
-package com.example.mka.fiftyplay;
+package com.madlavana.mka.fiftyplay;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;

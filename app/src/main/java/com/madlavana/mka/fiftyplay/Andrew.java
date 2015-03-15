@@ -1,4 +1,4 @@
-package com.example.mka.fiftyplay;
+package com.madlavana.mka.fiftyplay;
 
 import java.util.ArrayList;
 import java.util.List;

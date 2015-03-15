@@ -1,4 +1,4 @@
-package com.example.mka.fiftyplay;
+package com.madlavana.mka.fiftyplay;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
