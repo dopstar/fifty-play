@@ -167,7 +167,7 @@ android:layout_height="wrap_content">
             android:text="@string/yes_button"
             android:id="@+id/YesButton"
             android:layout_column="0"
-            android:background="@android:color/holo_blue_light"
+            android:background="@android:color/holo_blue_dark"
         />
         <Button
             android:layout_width="wrap_content"
@@ -175,7 +175,7 @@ android:layout_height="wrap_content">
             android:text="@string/no_button"
             android:id="@+id/NoButton"
             android:layout_column="20"
-            android:background="@android:color/holo_blue_light"
+            android:background="@android:color/holo_blue_dark"
             />
     </TableRow>
 
@@ -195,7 +195,7 @@ android:layout_height="wrap_content">
                 android:text="@string/start_playing"
                 android:id="@+id/StartButton"
                 android:layout_column="0"
-                android:background="@android:color/holo_blue_light"
+                android:background="@android:color/holo_blue_dark"
                 />
         </TableRow>
     </TableLayout>
