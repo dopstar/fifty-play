@@ -1,6 +1,6 @@
 package com.madlavana.mka.fiftyplay;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
     private int answer = 0;
     private Andrew[] cards = new Andrew[] {
             new Andrew(0),
@@ -38,8 +38,15 @@ public class MainActivity extends ActionBarActivity {
 
     public void showMainWidget() {
         setContentView(R.layout.activity_main);
+        findViewById(R.id.instructions).setVisibility(View.VISIBLE);
+        findViewById(R.id.startPlaying).setVisibility(View.VISIBLE);
+        findViewById(R.id.step).setVisibility(View.GONE);
+        findViewById(R.id.card).setVisibility(View.GONE);
+        findViewById(R.id.YesNoButtons).setVisibility(View.GONE);
         Button mYesButton = (Button) findViewById(R.id.YesButton);
         Button mNoButton = (Button) findViewById(R.id.NoButton);
+        Button mStartButton = (Button) findViewById(R.id.StartButton);
+
         mYesButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -54,6 +61,16 @@ public class MainActivity extends ActionBarActivity {
                 cards[currentQuestionNumber].setAnswer(false);
                 currentQuestionNumber++;
                 displayCard();
+            }
+        });
+        mStartButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                findViewById(R.id.instructions).setVisibility(View.GONE);
+                findViewById(R.id.startPlaying).setVisibility(View.GONE);
+                findViewById(R.id.step).setVisibility(View.VISIBLE);
+                findViewById(R.id.card).setVisibility(View.VISIBLE);
+                findViewById(R.id.YesNoButtons).setVisibility(View.VISIBLE);
             }
         });
     }
