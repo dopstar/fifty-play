@@ -41,6 +41,7 @@ public class MainActivity extends Activity {
         findViewById(R.id.instructions).setVisibility(View.VISIBLE);
         findViewById(R.id.startPlaying).setVisibility(View.VISIBLE);
         findViewById(R.id.step).setVisibility(View.GONE);
+        findViewById(R.id.confirm).setVisibility(View.GONE);
         findViewById(R.id.card).setVisibility(View.GONE);
         findViewById(R.id.YesNoButtons).setVisibility(View.GONE);
         Button mYesButton = (Button) findViewById(R.id.YesButton);
@@ -69,6 +70,7 @@ public class MainActivity extends Activity {
                 findViewById(R.id.instructions).setVisibility(View.GONE);
                 findViewById(R.id.startPlaying).setVisibility(View.GONE);
                 findViewById(R.id.step).setVisibility(View.VISIBLE);
+                findViewById(R.id.confirm).setVisibility(View.VISIBLE);
                 findViewById(R.id.card).setVisibility(View.VISIBLE);
                 findViewById(R.id.YesNoButtons).setVisibility(View.VISIBLE);
             }
