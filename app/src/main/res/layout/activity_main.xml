@@ -46,7 +46,7 @@
         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge" android:text="4"
             android:id="@+id/textView1" android:layout_column="1"
-            android:background="#111111" android:gravity="center"
+            android:background="#222222" android:gravity="center"
             android:height="50dip" />
         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge" android:text="6"
@@ -55,7 +55,7 @@
         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge" android:text="9"
             android:id="@+id/textView3" android:layout_column="3"
-            android:background="#111111" android:gravity="center" android:height="50dip" />
+            android:background="#222222" android:gravity="center" android:height="50dip" />
         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge" android:text="12"
             android:id="@+id/textView4" android:layout_column="4"
@@ -72,7 +72,7 @@
             android:textAppearance="?android:attr/textAppearanceLarge" android:text="17"
             android:layout_column="1" android:id="@+id/textView6"
             android:height="50dip"
-            android:background="#111111" android:gravity="center" />
+            android:background="#222222" android:gravity="center" />
         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge" android:text="19"
             android:layout_column="2" android:height="50dip" android:id="@+id/textView7"
@@ -80,7 +80,7 @@
         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge" android:text="22"
             android:layout_column="3" android:height="50dip" android:id="@+id/textView8"
-            android:background="#111111" android:gravity="center" />
+            android:background="#222222" android:gravity="center" />
         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge" android:text="25"
             android:layout_column="4" android:height="50dip" android:id="@+id/textView9"
@@ -96,7 +96,7 @@
         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge" android:text="30"
             android:layout_column="1" android:height="50dip" android:id="@+id/textView11"
-            android:background="#111111" android:gravity="center" />
+            android:background="#222222" android:gravity="center" />
         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge" android:text="33"
             android:layout_column="2" android:height="50dip" android:id="@+id/textView12"
@@ -104,7 +104,7 @@
         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge" android:text="35"
             android:layout_column="3" android:height="50dip" android:id="@+id/textView13"
-            android:background="#111111" android:gravity="center" />
+            android:background="#222222" android:gravity="center" />
         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge" android:text="38"
             android:layout_column="4" android:height="50dip" android:id="@+id/textView14"
@@ -120,7 +120,7 @@
         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge" android:text="43"
             android:layout_column="1" android:height="50dip" android:id="@+id/textView16"
-            android:background="#111111" android:gravity="center" />
+            android:background="#222222" android:gravity="center" />
         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge" android:text="46"
             android:layout_column="2" android:height="50dip" android:id="@+id/textView17"
@@ -128,7 +128,7 @@
         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge" android:text="48"
             android:layout_column="3" android:height="50dip" android:id="@+id/textView18"
-            android:background="#111111" android:gravity="center" />
+            android:background="#222222" android:gravity="center" />
         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge" android:text="51"
             android:layout_column="4" android:height="50dip" android:id="@+id/textView19"

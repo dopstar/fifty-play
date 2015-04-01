@@ -29,9 +29,9 @@ public class MainActivity extends Activity {
     }
 
     public void calculateAnswer() {
-        for (int i=0; i<cards.length; i++) {
-            if (cards[i].getAnswer()) {
-                answer += cards[i].getCard()[0];
+        for (Andrew card: cards) {
+            if (card.getAnswer()) {
+                answer += card.getCard()[0];
             }
         }
     }
@@ -79,8 +79,6 @@ public class MainActivity extends Activity {
 
     public void showAnswer() {
         currentQuestionNumber = 0; // reset to the start
-        calculateAnswer();
-
         setContentView(R.layout.answer_activity);
         Button mPlayAgainButton = (Button) findViewById(R.id.PlayAgainButton);
         mPlayAgainButton.setOnClickListener(new View.OnClickListener() {
@@ -91,40 +89,27 @@ public class MainActivity extends Activity {
                 showMainWidget();
             }
         });
-        ((TextView) findViewById(R.id.Answer)).setText(Integer.toString(answer));
+        String displayedAnswer = (answer == -1) ? "Please try again and answer honestly." : Integer.toString(answer);
+        answer = 0;
+        ((TextView) findViewById(R.id.Answer)).setText(displayedAnswer);
     }
 
     public void displayCard() {
+        calculateAnswer();
         if (currentQuestionNumber == 8) {
             showAnswer();
+        } else if (answer > 50) {
+            answer = -1;
+            showAnswer();
         } else {
-
-            ((TextView) findViewById(R.id.step)).setText("Step " + (currentQuestionNumber + 1) + " of 8");
-
-            int[] resourceIds = {
-                    R.id.textView0,
-                    R.id.textView1,
-                    R.id.textView2,
-                    R.id.textView3,
-                    R.id.textView4,
-                    R.id.textView5,
-                    R.id.textView6,
-                    R.id.textView7,
-                    R.id.textView8,
-                    R.id.textView9,
-                    R.id.textView10,
-                    R.id.textView11,
-                    R.id.textView12,
-                    R.id.textView13,
-                    R.id.textView14,
-                    R.id.textView15,
-                    R.id.textView16,
-                    R.id.textView17,
-                    R.id.textView18,
-                    R.id.textView19
-            };
-            for (int i = 0; i < resourceIds.length; i++) {
-                ((TextView) findViewById(resourceIds[i])).setText(Integer.toString(cards[currentQuestionNumber].getCard()[i]));
+            ((TextView) findViewById(R.id.step)).setText(
+                "Step " + (currentQuestionNumber + 1) + " of 8"
+            );
+            // Populate the matrix with numbers
+            for (int i = 0; i < 20; i++) {
+                int cellId = getResources().getIdentifier("textView"+i, "id", getPackageName());
+                String cellValue = Integer.toString(cards[currentQuestionNumber].getCard()[i]);
+                ((TextView) findViewById(cellId)).setText(cellValue);
             }
         }
     }
