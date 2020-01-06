@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">Fifty Play</string>
+    <string name="app_name">Zeckendorf\'s Theorem: 50 Play</string>
     <string name="yes_button">Yes</string>
     <string name="no_button">No</string>
     <string name="play_again">Play Again</string>
     <string name="instructions">
-        Pick a number between 1 &amp; 50.\nI will tell you your number.\n
+        Choose a number between 1 &amp; 50.\nI will tell you your number.\n
     </string>
     <string name="start_playing">Start Playing</string>
 </resources>

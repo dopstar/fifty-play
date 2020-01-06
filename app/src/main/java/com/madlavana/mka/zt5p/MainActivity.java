@@ -1,4 +1,4 @@
-package com.madlavana.mka.fiftyplay;
+package com.madlavana.mka.zt5p;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -32,6 +32,7 @@ public class MainActivity extends Activity {
         for (Andrew card: cards) {
             if (card.getAnswer()) {
                 answer += card.getCard()[0];
+                card.setAnswer(false);
             }
         }
     }

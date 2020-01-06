@@ -1,14 +1,14 @@
-#About FiftyPlay#
-FiftyPlay is the number guessing game for Android. It is available on Google play store.
+# About ZT5P
+ZT5P (Zeckendorf's Theorem: 50 Play) is the number guessing game for Android. It is available on Google play store.
 
-#How to play#
-FiftyPlay app guesses the number you have chosen. The rules are, you pick any whole number
+# How to play
+The ZT5P app guesses the number you have chosen. The rules are, you pick any whole number
 between 1 and 50 and keep that as a secret. Then on step 1 you will check the table of numbers that
 are presented to you, if your secret number is among those numbers you click the Yes button.
 Otherwise you click the No button. You continue the next seven steps. And your secret number is
 finally revealed to you.
 
-#Screenshots#
+# Screenshots
 ![screenshot01](/screenshots/screenshot01.png)
 
 ![screenshot02](/screenshots/screenshot02.png)

@@ -1,4 +1,4 @@
-package com.madlavana.mka.fiftyplay;
+package com.madlavana.mka.zt5p;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -44,5 +44,4 @@ public class Andrew {
         cards.add(card21);
         cards.add(card34);
     }
-
 }
