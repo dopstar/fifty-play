@@ -31,7 +31,7 @@ public class MainActivity extends Activity {
     public void calculateAnswer() {
         for (Andrew card: cards) {
             if (card.getAnswer()) {
-                answer += card.getCard()[0];
+                answer += card.getCard().get(0);
                 card.setAnswer(false);
             }
         }
@@ -109,7 +109,7 @@ public class MainActivity extends Activity {
             // Populate the matrix with numbers
             for (int i = 0; i < 20; i++) {
                 int cellId = getResources().getIdentifier("textView"+i, "id", getPackageName());
-                String cellValue = Integer.toString(cards[currentQuestionNumber].getCard()[i]);
+                String cellValue = Integer.toString(cards[currentQuestionNumber].getCard().get(i));
                 ((TextView) findViewById(cellId)).setText(cellValue);
             }
         }
